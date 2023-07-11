@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScriptureMemorizer", "ScriptureMemorizer\ScriptureMemorizer.csproj", "{F7A89AA9-6572-40D3-9A1B-737D08E77119}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Develop3", "Develop3.csproj", "{37A0B318-921F-4C46-B62C-E18200F1BDE4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F7A89AA9-6572-40D3-9A1B-737D08E77119}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F7A89AA9-6572-40D3-9A1B-737D08E77119}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F7A89AA9-6572-40D3-9A1B-737D08E77119}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F7A89AA9-6572-40D3-9A1B-737D08E77119}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37A0B318-921F-4C46-B62C-E18200F1BDE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37A0B318-921F-4C46-B62C-E18200F1BDE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37A0B318-921F-4C46-B62C-E18200F1BDE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37A0B318-921F-4C46-B62C-E18200F1BDE4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {5F19BED7-EF0C-42CA-99FC-8BE245190A0C}
+		SolutionGuid = {1633812B-3621-427B-A3CA-45715F5FC0A5}
 	EndGlobalSection
 EndGlobal
