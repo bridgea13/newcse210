@@ -9,16 +9,18 @@ class Program
         Scripture john = new Scripture("John", 3, 16, "For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.");
         proverbs.DisplayScripture();
 
-        Console.WriteLine("\nPress Enter to hide words or type quit to exit.");
-        Console.WriteLine(">");
         string input = "";
 
         while(input != "quit")
         {
+            
             Console.WriteLine("\nPress Enter to hide words or type quit to exit.");
             Console.WriteLine(">");
             input = Console.ReadLine();
+            Console.Clear();
+            proverbs.HideWords();
         }
+
 
     }
    
