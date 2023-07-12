@@ -29,14 +29,14 @@ public class Scripture
         char[] separators = { ' ', ',', '.' };
         string[] words = Text.Split(separators, StringSplitOptions.RemoveEmptyEntries);
 
-        foreach (string word in words) 
+        foreach (string word in words)
         {
             Word word1 = new Word(word);
             Words.Add(word1);
         }
-        
+
     }
-     public void DisplayScripture()
+    public void DisplayScripture()
     {
         Citation.DisplayReference();
         Console.WriteLine(Text);
@@ -45,51 +45,47 @@ public class Scripture
     public void HideWords()
     {
         int hiddenWords = 0;
+        int allWordsHidden = 0;
         string result = "";
-        while (hiddenWords < 3)
+        while (hiddenWords < 5)
         {
-            
+            allWordsHidden = 0;
             Random random = new Random();
             int randomWord = random.Next(Words.Count);
-            
             if (Words[randomWord].Hidden == false)
             {
-                hiddenWords++;
                 Words[randomWord].Hidden = true;
+                hiddenWords++;
+                
             }
             
-            bool allWordsTrue = true;
             foreach (Word word in Words)
             {
-                if (word.Hidden == false)
-                {
-                    result += word.SingleWord;
-                }
-                else
-                {
-                    result += "___";
-                }
-                result += " ";
-
-
+                if (word.Hidden== true) { allWordsHidden++; }
+                
             }
-            foreach (Word word in Words)
-            {
-                if (!word.Hidden)
-                {
-                    allWordsTrue = false;
-                    break;
-                }
-            }
-            if (allWordsTrue) 
+            Console.WriteLine(allWordsHidden + " "+ Words.Count);
+            if (allWordsHidden ==Words.Count)
             {
                 hiddenWords = 12;
             }
+            Console.WriteLine(hiddenWords);
 
-
+        }
+        foreach (Word word in Words)
+        {
+            if (word.Hidden == false)
+            {
+                result += word.SingleWord;
+            }
+            else { result += "___"; }
+            result += " ";
         }
         Console.WriteLine(result);
 
     }
+
+
 }
+
 

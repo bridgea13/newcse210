@@ -17,8 +17,10 @@ class Program
             Console.WriteLine("\nPress Enter to hide words or type quit to exit.");
             Console.WriteLine(">");
             input = Console.ReadLine();
+            
             Console.Clear();
             proverbs.HideWords();
+
         }
 
 
