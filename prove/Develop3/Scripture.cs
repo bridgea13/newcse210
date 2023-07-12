@@ -1,12 +1,27 @@
-﻿
+﻿using System;
 
 public class Scripture
 {
-    public string Citation { get; set; }
+    public Reference Citation;
     public string Text { get; set; }
-    public Citation(string text, string citation)
+    
+    
+
+    public Scripture(string book, int chapter, int startVerse, int endVerse, string text)
     {
+        Citation = new Reference(book, chapter, startVerse, endVerse);
         Text = text;
-        Citation = citation;
+       
+    }
+    public Scripture(string book, int chapter, int startVerse, string text)
+    {
+        Citation = new Reference(book, chapter, startVerse);
+        Text = text;
+
+    }
+    public void DisplayScripture()
+    {
+        Citation.DisplayReference();
+        Console.WriteLine(Text);
     }
 }
