@@ -64,12 +64,12 @@ public class Scripture
                 if (word.Hidden== true) { allWordsHidden++; }
                 
             }
-            Console.WriteLine(allWordsHidden + " "+ Words.Count);
+            
             if (allWordsHidden ==Words.Count)
             {
                 hiddenWords = 12;
             }
-            Console.WriteLine(hiddenWords);
+            
 
         }
         foreach (Word word in Words)
